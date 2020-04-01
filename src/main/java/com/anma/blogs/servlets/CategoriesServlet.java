@@ -1,4 +1,4 @@
-package com.beastihut.blogs.servlets;
+package com.anma.blogs.servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,13 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/contacts.do")
-public class Contacts extends HttpServlet {
+@WebServlet(urlPatterns = "/categories.do")
+public class CategoriesServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        request.getRequestDispatcher("/views/contacts.jsp").forward(request, response);
+       request.getRequestDispatcher("/views/categories.jsp").forward(request, response);
     }
 
     @Override

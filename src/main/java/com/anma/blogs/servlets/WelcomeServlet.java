@@ -1,4 +1,4 @@
-package com.beastihut.blogs.servlets;
+package com.anma.blogs.servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -1,4 +1,4 @@
-package com.beastihut.blogs.servlets;
+package com.anma.blogs.servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,18 +7,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/blogs.do")
-public class BlogsMainPage extends HttpServlet {
+@WebServlet(urlPatterns = "/contacts.do")
+public class Contacts extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/views/blogs.jsp").forward(request, response);
+        request.getRequestDispatcher("/views/contacts.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
 
     }
 }
