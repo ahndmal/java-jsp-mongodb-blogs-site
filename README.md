@@ -2,5 +2,6 @@
 
 Draft of the app based on the following technologies:
 
-* Servlets
+* Java Servlets
+* JSP templating language
 * MongoDB
